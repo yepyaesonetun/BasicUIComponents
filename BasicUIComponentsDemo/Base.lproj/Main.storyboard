@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicUIComponentsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiK-pz-hHn">
+                                <rect key="frame" x="0.0" y="298" width="375" height="216"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="II1-11-duB">
+                                        <rect key="frame" x="148" y="11.666666666666686" width="203" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="oRQ-ey-H2l"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwQ-Cv-oMU">
+                                        <rect key="frame" x="24" y="24" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AKC-SX-K0u">
+                                        <rect key="frame" x="148" y="80.666666666666686" width="203" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="PhS-li-T8T"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Male"/>
+                                            <segment title="Female"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="scGender:" destination="BYZ-38-t0r" eventType="valueChanged" id="vOc-KZ-uOI"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybp-ZX-9o4">
+                                        <rect key="frame" x="24" y="93" width="57" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5e-cG-rFf">
+                                        <rect key="frame" x="24" y="162" width="327" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5m-7o-r2V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AKC-SX-K0u" secondAttribute="trailing" constant="24" id="CPM-ml-bdc"/>
+                                    <constraint firstItem="II1-11-duB" firstAttribute="centerY" secondItem="TwQ-Cv-oMU" secondAttribute="centerY" id="Crl-6V-0hZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q5e-cG-rFf" secondAttribute="trailing" constant="24" id="Dwf-27-zcB"/>
+                                    <constraint firstAttribute="trailing" secondItem="II1-11-duB" secondAttribute="trailing" constant="24" id="ItL-o4-CTV"/>
+                                    <constraint firstItem="TwQ-Cv-oMU" firstAttribute="leading" secondItem="tiK-pz-hHn" secondAttribute="leading" constant="24" id="Lan-lu-73f"/>
+                                    <constraint firstItem="Ybp-ZX-9o4" firstAttribute="leading" secondItem="TwQ-Cv-oMU" secondAttribute="leading" id="R3J-tm-cYd"/>
+                                    <constraint firstItem="Q5e-cG-rFf" firstAttribute="leading" secondItem="tiK-pz-hHn" secondAttribute="leading" constant="24" id="UzJ-JD-LxS"/>
+                                    <constraint firstItem="TwQ-Cv-oMU" firstAttribute="top" secondItem="tiK-pz-hHn" secondAttribute="top" constant="24" id="YsL-hd-DeH"/>
+                                    <constraint firstItem="II1-11-duB" firstAttribute="leading" secondItem="TwQ-Cv-oMU" secondAttribute="trailing" constant="24" id="bod-Iu-N6U"/>
+                                    <constraint firstItem="II1-11-duB" firstAttribute="leading" secondItem="AKC-SX-K0u" secondAttribute="leading" id="gfb-uo-dc8"/>
+                                    <constraint firstItem="AKC-SX-K0u" firstAttribute="centerY" secondItem="Ybp-ZX-9o4" secondAttribute="centerY" id="ldV-rR-Ty0"/>
+                                    <constraint firstItem="Ybp-ZX-9o4" firstAttribute="top" secondItem="TwQ-Cv-oMU" secondAttribute="bottom" constant="48" id="o3d-EE-J6s"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q5e-cG-rFf" secondAttribute="bottom" constant="24" id="s2j-Jy-Ua4"/>
+                                    <constraint firstItem="Q5e-cG-rFf" firstAttribute="top" secondItem="Ybp-ZX-9o4" secondAttribute="bottom" constant="48" id="zjl-Wa-yGH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tiK-pz-hHn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AWi-7D-IoR"/>
+                            <constraint firstItem="tiK-pz-hHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NFc-4W-5UY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tiK-pz-hHn" secondAttribute="trailing" id="zF6-BW-55b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfDateOfBirth" destination="II1-11-duB" id="0JR-Ju-vDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="QDT-SD-sf7">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="4Yi-qO-wF9" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tro-2Y-YDb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WcP-BJ-zCe">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lok-tc-PGc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="367"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4b-ee-3DX">
+                                                <rect key="frame" x="120.66666666666669" y="169.33333333333334" width="134" height="28.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="r4b-ee-3DX" firstAttribute="centerX" secondItem="lok-tc-PGc" secondAttribute="centerX" id="Cxb-gX-8aE"/>
+                                            <constraint firstItem="r4b-ee-3DX" firstAttribute="centerY" secondItem="lok-tc-PGc" secondAttribute="centerY" id="PFn-eK-p5c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dip-GH-oIR">
+                                        <rect key="frame" x="0.0" y="367" width="375" height="367"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls0-Gz-vXG">
+                                                <rect key="frame" x="149" y="169.33333333333337" width="77" height="28.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.26114412349999999" green="0.74016497459999997" blue="0.2969784124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ls0-Gz-vXG" firstAttribute="centerX" secondItem="dip-GH-oIR" secondAttribute="centerX" id="Qv1-tl-QXK"/>
+                                            <constraint firstItem="ls0-Gz-vXG" firstAttribute="centerY" secondItem="dip-GH-oIR" secondAttribute="centerY" id="kYr-bS-wtU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tem-IG-wEX" firstAttribute="trailing" secondItem="WcP-BJ-zCe" secondAttribute="trailing" id="gA6-QB-hGL"/>
+                            <constraint firstItem="WcP-BJ-zCe" firstAttribute="leading" secondItem="Tem-IG-wEX" secondAttribute="leading" id="hMK-aT-7zI"/>
+                            <constraint firstItem="WcP-BJ-zCe" firstAttribute="top" secondItem="Tem-IG-wEX" secondAttribute="top" id="uk9-Ig-U2Y"/>
+                            <constraint firstItem="Tem-IG-wEX" firstAttribute="bottom" secondItem="WcP-BJ-zCe" secondAttribute="bottom" id="wuk-QY-OV7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tem-IG-wEX"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfDob" destination="r4b-ee-3DX" id="NcQ-3J-qWA"/>
+                        <outlet property="tfGender" destination="ls0-Gz-vXG" id="ahN-KC-Ljg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHt-1d-mcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="23"/>
+        </scene>
+    </scenes>
+</document>
